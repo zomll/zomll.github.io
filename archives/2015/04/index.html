@@ -3,24 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Vsftp给每个用户建立单独的配置文件 | Zomll&#39;s Blog</title>
+  <title>Zomll&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.添加用户ftp1
-1useradd ftp1 -s /sbin/nologin
-2.编辑/etc/vsftp/vsftp.conf">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Vsftp给每个用户建立单独的配置文件">
-<meta property="og:url" content="http://blog.zomll.com/2014/12/31/Vsftp-for-each-user-to-create-separate-configuration-file/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zomll's Blog">
+<meta property="og:url" content="http://blog.zomll.com/archives/2015/04/index.html">
 <meta property="og:site_name" content="Zomll's Blog">
-<meta property="og:description" content="1.添加用户ftp1
-1useradd ftp1 -s /sbin/nologin
-2.编辑/etc/vsftp/vsftp.conf">
-<meta property="og:image" content="/imgs/151459479689051.jpg">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vsftp给每个用户建立单独的配置文件">
-<meta name="twitter:description" content="1.添加用户ftp1
-1useradd ftp1 -s /sbin/nologin
-2.编辑/etc/vsftp/vsftp.conf">
+<meta name="twitter:title" content="Zomll's Blog">
+<meta name="twitter:description">
   
   
     <link rel="icon" href="/favicon.png">
@@ -90,79 +83,43 @@
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header">未分类</h1>
+              <h1 class="header"><i class="icon" id="icon-archive"></i>归档: 2015/4</h1>
             </div>
             <div class="main-body-content">
               
-  <article id="post-Vsftp-for-each-user-to-create-separate-configuration-file" class="article article-single article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-      <!--  -->
+      <div class="article-row">
+    
+        
+  <article class="article article-summary">
+    <div class="article-summary-inner">
       
-        <header class="article-header">
-          
+<a href="/2015/04/08/文摘-真正的喜欢不需要坚持/" class="thumbnail">
   
-    <h1 class="article-title" itemprop="name">
-      Vsftp给每个用户建立单独的配置文件
-    </h1>
+    <span style="background-image:url(/imgs/11111111.jpg
+)" alt="[文摘]真正的喜欢不需要坚持" class="thumbnail-image"></span>
   
-
-        </header>
-      
-      <p class="article-byline">
-        <a href="/2014/12/31/Vsftp-for-each-user-to-create-separate-configuration-file/" class="article-date">
-  <time datetime="2014-12-31T15:20:46.000Z" itemprop="datePublished">12月 31 2014</time>
 </a>
-      </p>
-      <div class="article-entry" itemprop="articleBody">
-        <p><img src="/imgs/151459479689051.jpg" alt=""><br>1.添加用户ftp1</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd ftp1 <span class="operator">-s</span> /sbin/nologin</span><br></pre></td></tr></table></figure>
-<p>2.编辑/etc/vsftp/vsftp.conf</p>
-<a id="more"></a>
-<p>末尾添加配置：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user_config_dir=/etc/vsftpd/userconfig</span><br></pre></td></tr></table></figure>
-<p>3.添加文件夹：/etc/vsftpd/userconfig</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/vsftpd/userconfig</span><br></pre></td></tr></table></figure>
-<p>4.添加文件/etc/vsftp/userconfig/ftp1</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /etc/vsftpd/userconfig/ftp1</span><br></pre></td></tr></table></figure>
-<p>5.编辑文件/etc/vsftp/userconfig/ftp1</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/vsftpd/userconfig/ftp1</span><br></pre></td></tr></table></figure>
-<p>添加：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">write_<span class="built_in">enable</span>=NO //禁止上传</span><br><span class="line">download_<span class="built_in">enable</span>=YES //允许下载</span><br></pre></td></tr></table></figure>
+
+      <div class="article-meta">
+        <p class="category"></p>
+        <p class="date"><time datetime="2015-04-07T16:53:43.000Z" itemprop="datePublished">4月 8 2015</time></p>
       </div>
-      <footer class="article-footer">
-<!--文章分享-->
-       
-        <div class="bdsharebuttonbox" style="float:right"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-       
-<!--文章分享 end-->
+      <h2 class="article-title">
+        <a href="/2015/04/08/文摘-真正的喜欢不需要坚持/" class="title">[文摘]真正的喜欢不需要坚持</a>
+      </h2>
+      <p class="article-excerpt">
         
-        
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Vsftp-for-each-user-to-create-separate-configuration-file" data-title="Vsftp给每个用户建立单独的配置文件" data-url="http://blog.zomll.com/2014/12/31/Vsftp-for-each-user-to-create-separate-configuration-file/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"zomllsblog"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
-        
-      </footer>
+        By cnFeat
+自从将这句话放在签名档之后，许多朋友表示不了解：为什么我不能为自己喜欢东西坚持呢？我就这里统一回答一下：如果你需要坚持，则意味着你仍有另一个选择，你曾经在这两个选择中犹豫过。「坚持」二字刻意地夸大了意志的力量，给人一种似乎坚持了就会成功的感觉。譬如有人说，我坚持每个星期读一本书，那么我就想问，是有人逼你读书么？你这样做你开心乐意吗？或者是你压根就是在说谎，用这种仿似经修饰过的语
+      </p>
     </div>
   </article>
+
+    
+      </div>
+    
+  
+  
 
 
             </div>
@@ -179,29 +136,6 @@
       
     </ul>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015/01/03/desktop-and-desktop-virtualization-capabilities/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <p class="article-nav-title">
-        
-          服务器虚拟化和桌面虚拟化
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
-  
-  
-    <a href="/2014/03/19/for-linux-server-automatic-backup-website-data/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <p class="article-nav-title">实现linux服务器下自动备份网站数据</p>
-      <i class="icon" id="icon-chevron-left"></i>
-    </a>
-  
-</nav>
-
   
   <div class="widgets-container">
     
