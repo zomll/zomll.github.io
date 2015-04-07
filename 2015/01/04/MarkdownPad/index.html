@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Markdown编辑工具MarkdownPad | Zomll&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="写作会碰到什么难题？写作一般而言，会碰到这么一些难题：
+
+难以专心：写Word文档的时候，我们经常浪费大量时间在Word本身上，特别是那80%我们用不到的功能。比如，找借口，Word又出问题了；或者，又要升级了。其实，在内心偷笑，哈哈，可以偷懒了浪费力气在排版上：使用Word时，我们会花费大量力气去排版，试图让文档变得漂亮一些。是粗体还是斜体，是宋体还是黑体，对创作来说，有那么重要吗？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown编辑工具MarkdownPad">
+<meta property="og:url" content="http://blog.zomll.com/2015/01/04/MarkdownPad/index.html">
+<meta property="og:site_name" content="Zomll's Blog">
+<meta property="og:description" content="写作会碰到什么难题？写作一般而言，会碰到这么一些难题：
+
+难以专心：写Word文档的时候，我们经常浪费大量时间在Word本身上，特别是那80%我们用不到的功能。比如，找借口，Word又出问题了；或者，又要升级了。其实，在内心偷笑，哈哈，可以偷懒了浪费力气在排版上：使用Word时，我们会花费大量力气去排版，试图让文档变得漂亮一些。是粗体还是斜体，是宋体还是黑体，对创作来说，有那么重要吗？">
+<meta property="og:image" content="/imgs/mdpad.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown编辑工具MarkdownPad">
+<meta name="twitter:description" content="写作会碰到什么难题？写作一般而言，会碰到这么一些难题：
+
+难以专心：写Word文档的时候，我们经常浪费大量时间在Word本身上，特别是那80%我们用不到的功能。比如，找借口，Word又出问题了；或者，又要升级了。其实，在内心偷笑，哈哈，可以偷懒了浪费力气在排版上：使用Word时，我们会花费大量力气去排版，试图让文档变得漂亮一些。是粗体还是斜体，是宋体还是黑体，对创作来说，有那么重要吗？">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
+  
+  
+
+
+  
+
+  
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+            <h2 class="subtitle-wrap">
+              <p class="subtitle">If you have a dream,you have to protect it</p>
+            </h2>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/学无止境/">学无止境</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/学无止境/操作系统/">操作系统</a></li></ul></li></ul>
+                  
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
+              
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+               <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=9210881243936687645' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header">未分类</h1>
+            </div>
+            <div class="main-body-content">
+              
+  <article id="post-MarkdownPad" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      Markdown编辑工具MarkdownPad
+    </h1>
+  
+
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2015/01/04/MarkdownPad/" class="article-date">
+  <time datetime="2015-01-04T02:26:16.000Z" itemprop="datePublished">1月 4 2015</time>
+</a>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
+        <h2 id="写作会碰到什么难题？">写作会碰到什么难题？</h2><p>写作一般而言，会碰到这么一些难题：</p>
+<ul>
+<li>难以专心：写Word文档的时候，我们经常浪费大量时间在Word本身上，特别是那80%我们用不到的功能。比如，找借口，Word又出问题了；或者，又要升级了。其实，在内心偷笑，哈哈，可以偷懒了<br>浪费力气在排版上：使用Word时，我们会花费大量力气去排版，试图让文档变得漂亮一些。是粗体还是斜体，是宋体还是黑体，对创作来说，有那么重要吗？<a id="more"></a></li>
+<li>难以自动的版本跟踪：每一位自杀的写作者的电脑文档里面，都必然有一个Word文档，从V1.0到V20.0的无数版本…</li>
+<li>难以共同协作：想想你让一位合作的编辑帮你改书有多么痛苦，一个Word文档来，一个Word去，极其难用的修订与审阅功能，你就理解了；</li>
+</ul>
+<h2 id="Markdown是什么？">Markdown是什么？</h2><p>它实际上是个非常简单、非常容易学习的语法。这个语法简单到每个人都可以在5分钟以内学会。应该是为数不多，你真的可以彻底学会的语言。</p>
+<p>更重要的是，Markdown语法所有要素，是与写作的习惯一脉相承的，套用句俗语：仅为写作而生。</p>
+<h2 id="编辑工具推荐：MarkdownPad">编辑工具推荐：MarkdownPad</h2><p>MarkdownPad是Windows下的一个全功能Markdown编辑器</p>
+<p><img src="/imgs/mdpad.png" alt="MarkdownPad编辑器"></p>
+<p>MarkdownPad特点</p>
+<p>1.为你提供了语法高亮和方便的快捷键功能，给您最好的Markdown编写体验。</p>
+<p>2.无需猜测您的 语法 是否正确；每当您敲击键盘，实时预览功能都会立刻准确呈现出文档的显示效果。</p>
+
+      </div>
+      <footer class="article-footer">
+<!--文章分享-->
+       
+        <div class="bdsharebuttonbox" style="float:right"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+       
+<!--文章分享 end-->
+        
+        
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="MarkdownPad" data-title="Markdown编辑工具MarkdownPad" data-url="http://blog.zomll.com/2015/01/04/MarkdownPad/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zomllsblog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+        
+      </footer>
+    </div>
+  </article>
+
+
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>关注我 :</p>
+    <ul class="social-links">
+      
+        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/zzh5659"><i id="icon-weibo" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="rss" href="/"><i id="icon-rss" class="icon"></i></a></li>
+      
+    </ul>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/01/03/desktop-and-desktop-virtualization-capabilities/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <p class="article-nav-title">服务器虚拟化和桌面虚拟化</p>
+      <i class="icon" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
+  
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/01/04/MarkdownPad/" class="thumbnail">
+  
+    <span style="background-image:url(/imgs/mdpad.png
+)" alt="Markdown编辑工具MarkdownPad" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/01/04/MarkdownPad/" class="title">Markdown编辑工具MarkdownPad</a></p>
+              <p class="item-date"><time datetime="2015-01-04T02:26:16.000Z" itemprop="datePublished">1月 4 2015</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/01/03/desktop-and-desktop-virtualization-capabilities/" class="thumbnail">
+  
+    <span style="background-image:url(/imgs/3338778_4.png
+)" alt="服务器虚拟化和桌面虚拟化" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/01/03/desktop-and-desktop-virtualization-capabilities/" class="title">服务器虚拟化和桌面虚拟化</a></p>
+              <p class="item-date"><time datetime="2015-01-03T15:32:56.000Z" itemprop="datePublished">1月 3 2015</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2014/12/31/Vsftp-for-each-user-to-create-separate-configuration-file/" class="thumbnail">
+  
+    <span style="background-image:url(/imgs/151459479689051.jpg
+)" alt="Vsftp给每个用户建立单独的配置文件" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2014/12/31/Vsftp-for-each-user-to-create-separate-configuration-file/" class="title">Vsftp给每个用户建立单独的配置文件</a></p>
+              <p class="item-date"><time datetime="2014-12-31T15:20:46.000Z" itemprop="datePublished">12月 31 2014</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2014/03/19/for-linux-server-automatic-backup-website-data/" class="thumbnail">
+  
+    <span style="background-image:url(/imgs/20150406154829.png
+)" alt="实现linux服务器下自动备份网站数据" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/学无止境/">学无止境</a><i class="icon" id="icon-angle-right"></i><a class="article-category-link" href="/categories/学无止境/操作系统/">操作系统</a></p>
+              <p class="item-title"><a href="/2014/03/19/for-linux-server-automatic-backup-website-data/" class="title">实现linux服务器下自动备份网站数据</a></p>
+              <p class="item-date"><time datetime="2014-03-19T14:39:10.000Z" itemprop="datePublished">3月 19 2014</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学无止境/">学无止境</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/学无止境/操作系统/">操作系统</a><span class="category-list-count">1</span></li></ul></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 Zomll</p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a> | 鄂ICP备14002066号 | <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5112450'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D5112450' type='text/javascript'%3E%3C/script%3E"));</script>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
+  <script src="/scrollLoading/main.js" type="text/javascript"></script>
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
